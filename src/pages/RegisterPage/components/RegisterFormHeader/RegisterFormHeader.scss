@@ -1,0 +1,15 @@
+.register__content-form-header {
+  @extend .flex-center;
+  gap: 2rem;
+  background-color: $orange;
+  padding: 0.8rem 0;
+
+  &-step {
+    @extend .register-header-step;
+  }
+
+  &-step--active {
+    @extend .register-header-step;
+    color: $orange;
+  }
+}

@@ -1,0 +1,17 @@
+@import "./utils/mixins";
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: $blue-dark;
+
+    @include tablet-and-mobile {
+        font-size: 2.1rem;
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $blue-dark;
+}

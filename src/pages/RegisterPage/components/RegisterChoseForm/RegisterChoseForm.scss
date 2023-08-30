@@ -1,0 +1,39 @@
+.register-chose-form {
+  display: flex;
+  padding: 1rem;
+
+  label {
+    color: $blue-dark;
+  }
+
+  input[type=radio] {
+    accent-color: $blue-light;
+  }
+
+  &__text {
+    padding-right: 13%;
+    color: $blue-dark;
+  }
+
+  span {
+    font-size: 1.1rem;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .6em;
+    margin-top: 3%;
+  }
+  
+  &__description {
+    margin-top: 5%;
+    padding-bottom: 21.3%;
+
+    &-text {
+      font-size: 1rem;
+      color: $blue-light;
+    }
+  }
+}

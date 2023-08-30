@@ -1,0 +1,25 @@
+.register-form-footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+
+  &__text {
+    max-width: 58%;
+  }
+
+  #register-form-footer-text {
+    color: $grey;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+  }
+}
+
+.step-1 {
+  justify-content: space-between;
+}
+
+.step {
+  justify-content: flex-end;
+  gap: 2rem;
+}

@@ -1,0 +1,31 @@
+@import "./variables";
+@import "./fonts/fonts";
+@import "./typography";
+@import "./utils/mixins";
+@import "./utils/helpers";
+
+// Components
+@import "../components/Button/Button.scss";
+@import "../components/Navigation/components/NavBar/NavBar.scss";
+@import "../components//Navigation/components/TopBar/TopBar.scss";
+@import "../components/Footer/Footer.scss";
+@import "../pages/RegisterPage/components/RegisterForm/RegisterForm.scss";
+@import "../pages/RegisterPage/components/RegisterInputForm/RegisterInputForm.scss";
+@import "../pages/RegisterPage/components/RegisterFormHeader/RegisterFormHeader.scss";
+@import "../pages/RegisterPage/components/RegisterFormFooter/RegisterFormFooter.scss";
+@import "../pages/RegisterPage/components/RegisterChoseForm/RegisterChoseForm.scss";
+
+// Pages
+@import "../pages/HomePage/HomePage.scss";
+@import "../pages/RegisterPage/RegisterPage.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $white-background;
+}

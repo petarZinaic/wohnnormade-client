@@ -1,0 +1,38 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.standard-background-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.data-grid-custom-button {
+  border-radius: 40px;
+  padding: 0.2rem 1.5rem;
+  min-width: 10rem;
+}
+
+.header-page-span {
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.register-header-step {
+  @extend .flex-center;
+  background-color: $white;
+  border-radius: 100%;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: $orange-disabled;
+}

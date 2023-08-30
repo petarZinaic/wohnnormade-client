@@ -1,0 +1,44 @@
+.register {
+  padding: 2rem 9rem;
+
+  @include tablet-and-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #register-page-span {
+    font-weight: 600;
+  }
+
+  p {
+    color: $blue-light;
+    line-height: 30px;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+
+  &__main {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2rem;
+
+    &-wrapper {
+      width: 50%;
+      border: 1px solid $blue-dimmed;
+      border-radius: 4px;
+      border-top: none;
+    }
+
+    &-image {
+      width: 50%;
+      background-image: url("../../assets/images/registration.svg");
+      @extend .standard-background-image;
+      min-height: 20rem;
+      min-width: 21rem;
+
+      @include tablet-and-mobile {
+        display: none;
+      }
+    }
+  }
+}

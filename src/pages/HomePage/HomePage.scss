@@ -1,0 +1,202 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  padding: 2% 8%;
+  justify-content: center;
+
+  p.text {
+    color: $blue-light;
+    line-height: 30px;
+    font-size: 1.25rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &__header {
+    display: flex;
+    min-height: 35rem;
+
+    @include tablet-and-mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-content {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+
+      padding: 0 11rem 0 0;
+      @include desktop-l {
+      }
+
+      @include desktop {
+        padding: 0 8rem 0 0;
+      }
+
+      @include tablet-and-mobile {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        padding: 5rem 2rem 4rem 0;
+      }
+
+      &--text {
+        @include desktop-l {
+          padding: 0 9rem 0 0;
+        }
+      }
+
+      &--text {
+        @include desktop {
+          padding: 0 2rem 0 0;
+        }
+      }
+    }
+
+    &-image {
+      min-width: 55%;
+      background-image: url("../../assets/images/home-page-buildings.svg");
+      @extend .standard-background-image;
+
+      @include tablet-and-mobile {
+        min-height: 20rem;
+        min-width: 21rem;
+      }
+
+      @include tablet {
+        min-width: 35rem;
+      }
+    }
+  }
+
+  &__comunity {
+    display: flex;
+    min-height: 35rem;
+    margin: 8% 0;
+
+    @include tablet-and-mobile {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &-image {
+      width: 40%;
+      background-image: url("../../assets/images/home-page-comunity.svg");
+      @extend .standard-background-image;
+
+      @include tablet-and-mobile {
+        min-height: 20rem;
+        min-width: 21rem;
+      }
+
+      @include tablet {
+        min-width: 35rem;
+      }
+    }
+
+    &-content {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 1rem;
+
+      @include desktop-l {
+        padding: 6.5rem 18rem 0 10rem;
+      }
+
+      @include desktop-m {
+        padding: 6.5rem 10rem 0 10rem;
+      }
+
+      @include desktop {
+        padding: 6.5rem 5rem 0 10rem;
+      }
+
+      @include tablet-and-mobile {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
+  .header-page-span {
+    @extend .header-page-span;
+    font-weight: 600;
+  }
+
+  .header-page-span--small {
+    @extend .header-page-span;
+    font-weight: 400;
+  }
+
+  &__demo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    @include desktop-l {
+      padding: 1rem 33rem;
+    }
+
+    @include desktop {
+      padding: 1rem 10rem;
+    }
+
+    @include tablet-and-mobile {
+      padding: 1rem 3rem;
+    }
+
+    p {
+      text-align: center;
+    }
+  }
+}
+
+.home-page__data-grid {
+  margin-bottom: 4rem;
+}
+
+.home-page__data-grid-container {
+  height: 13.4rem;
+}
+
+.home-page__data-grid-button {
+  background-color: $orange;
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: $orange-dark;
+  }
+}
+
+.data-grid-theme--header {
+  background-color: $blue-light;
+  color: $white;
+}
+
+.data-grid-violation-property-wrecked {
+  @extend .data-grid-custom-button;
+  background-color: $purple;
+  color: $purple-dark;
+  border: 0.1px solid $purple;
+}
+
+.data-grid-violation-rent-not-payed {
+  @extend .data-grid-custom-button;
+  background-color: $orange-light;
+  color: $orange-dark;
+  border: 0.5px solid $orange-light;
+}

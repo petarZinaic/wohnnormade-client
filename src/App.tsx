@@ -1,9 +1,9 @@
+import { AppTemplate } from "./components/templates";
+
+import "./style/index.scss";
+
 function App() {
-  return (
-    <div>
-      <h1>React app</h1>
-    </div>
-  );
+  return <AppTemplate />;
 }
 
 export default App;

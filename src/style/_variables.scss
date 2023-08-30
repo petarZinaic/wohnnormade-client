@@ -1,0 +1,36 @@
+$desktop-l: 1921px;
+$desktop: 1441px;
+$tablet: 1025px;
+$mobile: 601px;
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$grey: #707070;
+$cream-white: #fefeff;
+$blue-light: #455a64;
+$blue-dimmed: rgba(69, 90, 100, 0.6);
+$blue-dark: #1b2327;
+$orange: #ff725e;
+$orange-disabled: rgba(255, 114, 94, 0.35);
+$orange-light: rgba(215, 64, 0, 0.08);
+$orange-dark: #da513d;
+$purple: rgba(89, 35, 131, 0.08);
+$purple-dark: #592383;
+
+$white-background: $cream-white;
+
+// Button colors
+$button-disabled: $orange-disabled;
+
+$primary-button: $orange;
+$primary-button-text: $white;
+$primary-button-hover: $orange-dark;
+$primary-button-disabled: $orange-disabled;
+
+$secoundary-button: $white;
+$secoundary-button-text: $blue-dark;
+$secoundary-button-text-hover: $orange;
+
+// Transitions
+$transition-duration: 0.1s;
